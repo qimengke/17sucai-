@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+.box1{ width:500px; height:550px;  margin:0px auto;}
+.box2{ width:1050px; height:550px;  margin:0px auto; overflow:hidden; }
+.box3{ width:550px; height:1050px;  margin:0px auto;overflow:hidden; }
+.box4{ width:550px; height:550px;  margin:0px auto; overflow:hidden; }
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+.ph1{ animation-name:ph;animation-duration:2.5s;}
+@keyframes ph{
+	0%{ transform:translateY(-840px);}
+	100%{transform:translateY(0px);}
+	}
+.ph2{ animation-name:ph2;animation-duration:2.5s;animation-play-state:paused; }
+@keyframes ph2{
+	0%{ transform:translateY(0px);}
+	100%{transform:translateY(-840px);}
+	}
+.wheel{animation-name:spin; animation-duration:5s; animation-timing-function:linear;animation-iteration-count:infinite; animation-delay:2.5s;}
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+  }
+  	
+.nail{ animation-name:nai;animation-duration:2.5s; animation-play-state:paused;}
+@keyframes nai{
+	0%{ transform:translateY(-240px);}
+	100%{transform:translateY(0px);}
+	}
+	
+.cloud{ animation-name:clou;animation-duration:2.5s;animation-play-state:paused;}
+@keyframes clou{
+	0%{ transform:translateX(700px);}
+	100%{transform:translateX(0);}
+	}
+  
+.shop{animation-name:shop;animation-duration:2.5s;animation-play-state:paused;}
+@keyframes shop{
+	0%{ transform:translateY(-640px);}
+	100%{transform:translateY(0px);}
+	}
+	
+.fun{ animation-name:fu;animation-duration:2.5s;animation-play-state:paused;}
+@keyframes fu{
+	0%{ transform:translateY(200px); opacity:0.1;}
+	100%{transform:translateY(0px); opacity:1;}
+	}
+	
+.gift1{ animation-name:gif1;animation-duration:2.5s;animation-play-state:paused;}
+@keyframes gif1{
+	0%{ transform:translateX(200px);}
+	100%{transform:translateX(0);}
+	}
+	
+.gift2{ animation-name:gif2;animation-duration:2.5s;animation-play-state:paused;}
+@keyframes gif2{
+	0%{ transform:translateX(-200px);}
+	100%{transform:translateX(0);}
+	}
+	
+.ballon{ animation-name:bal;animation-duration:2.5s;animation-play-state:paused;}
+@keyframes bal{
+	0%{ transform:translateY(400px); }
+	100%{transform:translateY(0px); }
+	}
+	
+.phone1{ animation-name:ph1;animation-duration:2.5s;animation-play-state:paused;}
+@keyframes ph1{
+	0%{ transform: rotate(0deg)}
+	100%{transform: rotate(30deg); transform-origin:bottom right; }
+	}

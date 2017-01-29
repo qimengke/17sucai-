@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>走秀网-登陆</title>
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="../css/public/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/public/foot.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+</head>
+<body>
+	<!--头部-->
+	<div id="head">
+		<!--登陆-->
+		<i>登陆</i>
+		<!--注册框-->
+		<input type="text" name="text" id="text" value="注册" />
+	</div>
+	<!--中心部分-->
+	<div id="main">
+		<input type="text" name="account" id="account" value="账号" />
+		<input type="text" name="password" id="password" value="密码" />
+		<div class="password">
+			<input type="checkbox" name="check" id="check" value="" checked="checked"/>
+			<i>记住密码</i>
+			<em>忘记密码&nbsp;?</em>
+		</div>
+		<!--登录按钮，点击即可进入登录界面-->
+		<input type="text" name="login" id="login" value="登录" />
+	</div>
+	<!--尾部-->
+	<div id="foot">
+		<ul>
+			<li>
+				<i></i>
+				<span>首页</span>
+			</li>
+			<li>
+				<i></i>
+				<span>分类</span>
+			</li>
+			<li>
+				<i></i>
+				<span>购物车</span>
+			</li>
+			<li class="current">
+				<i></i>
+				<span>我的秀</span>
+			</li>
+			<li>
+				<i></i>
+				<span>更多</span>
+			</li>
+		</ul>
+	</div>
+</body>
+<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</html>

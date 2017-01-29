@@ -1,0 +1,231 @@
+/*设置根节点的字体大小*/
+body,html{
+	font-size: 100px;
+}
+/*头部*/
+#head{
+	width: 100%;
+	height: 0.84rem;
+	background: #e4366b;
+	display: flex;
+}
+@font-face {
+	font-family:damion;
+	src: url(../fonts/damion/damion.ttf);
+}
+/*ZXIU*/
+#head span{
+	display: inline-block;
+	height: 0.84rem;
+	font-size: 0.28rem;
+	line-height: 0.84rem;
+	color: white;
+	font-family:damion;
+	/*font-weight: bolder;*/
+	margin-left: 1.96rem;
+}
+/*走秀网*/
+#head i{
+	display: inline-block;
+	height: 0.84rem;
+	font-size: 0.28rem;
+	line-height: 0.84rem;
+	color: white;
+	/*font-weight: bold;*/
+	margin-left: 0.26rem;
+}
+/*输入框部分*/
+#input{
+	width: 100%;
+	height: 0.7rem;
+	background: #52525a;
+	padding-top: 0.16rem;
+	border-top: 1px solid #282828
+	border-bottom: 1px solid #282828;
+	display: flex;
+}
+#input input{
+	display: block;
+	width: 5.14rem;
+	padding-left: 0.76rem;
+	height: 0.56rem;
+	outline: none;
+	border: none;
+	margin:0 auto;
+	font:0.24rem/0.24rem '';
+	/*background: white;*/
+	/*margin-top: 0.16rem;*/
+	border-radius: 0.2rem;
+	-o-border-radius: 0.2rem;
+	-moz-border-radius: 0.2rem;
+	-webkit-border-radius: 0.2rem;
+	box-shadow: -2px 2px 2px #eee,2px -2px 2px #eee;
+	-moz-box-shadow: -2px 2px 2px #eee,2px -2px 2px #eee;
+	-o-box-shadow: -2px 2px 2px #eee,2px -2px 2px #eee;
+	-webkit-box-shadow: -2px 2px 2px #eee,2px -2px 2px #eee;
+	background:white url(../images/index/glass.jpg) no-repeat 0.28rem 0.12rem;
+	background-size: auto 0.38rem;
+	-o-background-size: auto 0.38rem;
+	-webkit-background-size: auto 0.38rem;
+	-moz-background-size: auto 0.38rem;
+}
+
+/*分类*/
+#sort{
+	width: 100%;
+	height: auto;
+	
+}
+#sort ul{
+	width: 100%;
+	height: auto;
+}
+#sort ul li{
+	
+	width: 100%;
+	height:1.98rem;
+	padding-top: 0.2rem;
+	border-bottom: 1px solid #282828;
+	
+	/*在移动端包括孩子的大盒子必须要加上display:flex;是灵活布局,和display:box效果一样,只是浏览器版本问题不一样*/
+	display: flex;
+}
+/*图片*/
+#sort ul li .img{
+	width: 1.72rem;
+	height: 1.72rem;
+	border: 1px solid #c6c6c6;
+	margin-right: 0.16rem;
+	margin-left: 0.14rem;
+}
+#sort ul li:nth-child(1) .img{
+	background: url(../images/index/rose.jpg) no-repeat left top;
+	background-size: 1.72rem auto;
+	-o-background-size: 1.72rem auto;
+	-webkit-background-size: 1.72rem auto;
+	-moz-background-size: 1.72rem auto;
+}
+#sort ul li:nth-child(2) .img{
+	background: url(../images/index/makeup.jpg) no-repeat 0.58rem 0.1rem;
+	background-size: 0.58rem auto;
+	-o-background-size: 0.58rem auto;
+	-webkit-background-size: 0.58rem auto;
+	-moz-background-size: 0.58rem auto;
+}
+#sort ul li:nth-child(3) .img{
+	background: url(../images/index/rose.jpg) no-repeat left top;
+	background-size: 1.72rem auto;
+	-o-background-size: 1.72rem auto;
+	-webkit-background-size: 1.72rem auto;
+	-moz-background-size: 1.72rem auto;
+}
+/*详细*/
+#sort ul li .detail{
+	width: 3.83rem;
+	height: 1.72rem;
+	position: relative;
+}
+#sort ul li .detail span{
+	display: block;
+	height: 0.55rem;
+	font:0.25rem/0.55rem '';
+	color: black;
+	width: 100%;
+}
+#sort ul li .detail i{
+	display: block;
+	height: 0.25rem;
+	font:0.25rem/0.25rem '';
+	color: black;
+	width: 3.58rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+/*钱*/
+#sort ul li .detail p{
+	margin-top:0.15rem;
+	width: 1.66rem;
+	height: 0.39rem;
+	display: flex;
+	position: relative;
+	display: flex;
+	/*white-space: wrap;*/
+}
+#sort ul li .detail p .mon_0{
+	width: 0.9rem;
+	height: 0.39rem;
+	font: 0.28rem/0.39rem '';
+	color: #f52b74;
+	text-align: left;
+}
+#sort ul li .detail p .mon_1{
+	width: 1.16rem;
+	height: 0.2rem;
+	margin-top: 0.12rem;
+	font: 0.2rem/0.2rem '';
+	color: #f52b74;
+	text-align: right;
+	text-decoration: line-through;
+}
+#sort ul li .detail p .mon_2{
+	width: 0.9rem;
+	/*display: block;*/
+	height: 0.38rem;
+	/*margin-top: 0.12rem;*/
+	font: 0.22rem/0.38rem '';
+	color: black;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top:0.39rem;
+}
+/*购物车*/
+#sort ul li .detail .cart{
+	width: 1.2rem;
+	height: 0.54rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	/*background: #dd215c;*/
+	border-radius: 0.1rem;
+	background: #dd215c url(../images/index/cart.jpg) no-repeat 0.36rem 0.1rem;
+	background-size: 0.4rem auto;
+}
+/*轮播图*/
+#focus{
+    width:100%;
+    height:2.5rem;
+    border-top:1px solid #ababab;
+    border-bottom:1px solid #707070;
+    position:relative;
+    background-size：6.4rem auto;
+    overflow: hidden;
+}
+.focus .hd{
+    width:100%;
+    height:0.05rem;
+    position:absolute;
+    z-index:1;
+    bottom:0;
+    text-align:center;
+}
+.focus .hd ul{
+    overflow:hidden;
+    height:0.05rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+.focus .hd ul .on{
+    background:#000;
+}
+.focus .bd{
+    position:relative;
+    z-index:0;
+}
+.focus .bd img{
+    width:100%;
+    height:2.5rem;
+}

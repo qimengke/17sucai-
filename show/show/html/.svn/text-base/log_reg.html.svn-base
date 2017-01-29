@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>登录-注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/public/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public/foot.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/log_reg.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head">
+			<!--我的秀-->
+			<i>我的秀</i>
+		</div>
+		<!--主体-->
+		<div id="main">
+			<!--用户-->
+			<div id="user">
+				<p></p>
+				<!--昵称：-->
+				<div class="classify">
+					<span>昵称：</span>
+					<i>未知</i>
+				</div>
+				<!--登陆、注册框-->
+				<div class="input">
+					<input type="text" name="login" id="login" value="登陆"/>
+					<input type="text" name="regist" id="regist" value="注册" />
+				</div>
+			</div>
+			<!--包括的部分-->
+			<div id="conclude">
+				<ul>
+					<li>
+						<span>我的订单</span>
+					</li>
+					<li>
+						<span>我的优惠券</span>
+					</li>
+					<li>
+						<span>浏览记录</span>
+					</li>
+					<li>
+						<span>我的收藏</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="foot">
+			<ul>
+				<li>
+					<i></i>
+					<span>首页</span>
+				</li>
+				<li>
+					<i></i>
+					<span>分类</span>
+				</li>
+				<li>
+					<i></i>
+					<span>购物车</span>
+				</li>
+				<li class="current">
+					<i></i>
+					<span>我的秀</span>
+				</li>
+				<li>
+					<i></i>
+					<span>更多</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+</html>

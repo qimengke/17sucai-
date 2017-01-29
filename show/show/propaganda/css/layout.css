@@ -1,0 +1,29 @@
+html,hbody{
+	overflow:hidden;
+	font-size: 100px;
+}
+
+.page{
+	width:100%;
+	height:100%;
+	position:absolute;
+	text-align:center;
+}
+
+.page-current{
+	z-index:1;
+}
+
+.hide{ display:none;}
+
+.arrow-up{
+	height:auto;
+	width:0.55rem;
+	position:absolute;
+	left:50%;
+	background:blue;
+	top:94%;
+	margin-left:-0.12rem;
+	z-index:99;
+}
+

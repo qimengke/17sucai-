@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>走秀网-分类</title>
+		<link rel="stylesheet" type="text/css" href="../css/classify.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public/foot.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head">
+			<!--ZXIU-->
+			<span>ZXIU</span>
+			<!--走秀网-->
+			<i>走秀网</i>
+		</div>
+		<!--输入框部分-->
+		<div id="input">
+			<input type="text" name="text" id="text" placeholder="请输入搜索内容" />
+		</div>
+		<!--种类-->
+		<div id="classify">
+			<ul>
+				<li>
+					<span>全部</span>
+				</li>				
+				<li>
+					<span>衬衫</span>
+				</li>
+				<li>
+					<span>女装T恤</span>
+				</li>
+				<li>
+					<span>珠宝配饰</span>
+				</li>
+				<li>
+					<span>美食保健</span>
+				</li>
+				<li>
+					<span>化妆品</span>
+				</li>
+				<li>
+					<span>品牌专场</span>
+				</li>
+				<li>
+					<span>家居品</span>
+				</li>
+			</ul>
+		</div>
+		<!--尾部-->
+		<div id="foot">
+			<ul>
+				<li>
+					<i></i>
+					<span>首页</span>
+				</li>
+				<li class="current">
+					<i></i>
+					<span>分类</span>
+				</li>
+				<li>
+					<i></i>
+					<span>购物车</span>
+				</li>
+				<li>
+					<i></i>
+					<span>我的秀</span>
+				</li>
+				<li>
+					<i></i>
+					<span>更多</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+</html>

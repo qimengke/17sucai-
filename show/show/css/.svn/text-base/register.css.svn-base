@@ -1,0 +1,103 @@
+body,html{
+	font-size: 100px;
+}
+/*头部*/
+#head{
+	width: 100%;
+	height: 0.84rem;
+	/*background: #e4366b;*/
+	display: flex;
+	background: #e4366b url(../images/log_reg/arrow.jpg) no-repeat 0.2rem 0.3rem;
+	background-size: 0.52rem auto;
+	-moz-background-size:0.52rem auto;
+	-o-background-size:0.52rem auto;
+	-webkit-background-size:0.52rem auto;
+	border-bottom: 1px solid #282828;
+	box-sizing: border-box;
+	position: relative;
+}
+/*登陆*/
+#head i{
+	display: inline-block;
+	height: 0.84rem;
+	font-size: 0.28rem;
+	line-height: 0.84rem;
+	color: white;
+	/*font-weight: bold;*/
+	margin-left: 43.3%;
+}
+/*注册框，点击进入注册页面*/
+#head input{
+	display: block;
+	position: absolute;
+	width: 1.1rem;
+	height: 0.54rem;
+	right: 0.2rem;
+	top: 0.14rem;
+	background: url(../images/login/reg.jpg) repeat-x;
+	outline: none;
+	border: none;
+	border-radius: 0.1rem;
+	-o-border-radius: 0.1rem;
+	-moz-border-radius: 0.1rem;
+	-webkit-border-radius: 0.1rem;
+	text-align: center;
+	font:0.24rem/0.54rem '';
+	color: white;
+}
+/*中心部分*/
+#main{
+	width: 100%;
+	
+	padding-top: 0.6rem;
+	background: #f7f7f7;
+	/*display: flex;*/
+	height: 10.6rem;
+	position: relative;
+}
+
+#inputEmail3,#inputPassword3,#inputEpassword4{
+	outline: none;
+	border: none;
+	display: block;
+	margin:0 0.4rem 0.4rem;
+	width: 5.36rem;
+	height: 0.8rem;
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding-left: 0.28rem;
+	border-radius: 0.15rem;
+	-o-border-radius: 0.15rem;
+	-moz-border-radius: 0.15rem;
+	-webkit-border-radius: 0.15rem;
+	color: #a59b99;
+	border-left: 1px solid #a5a5a5;
+	border-top: 1px solid #a5a5a5;
+	box-shadow: 0.06rem 0.06rem 0.06rem #f9f7e8;
+	-o-box-shadow: 0.06rem 0.06rem 0.06rem #f9f7e8;
+	-webkit-box-shadow: 0.06rem 0.06rem 0.06rem #f9f7e8;
+	-moz-box-shadow: 0.06rem 0.06rem 0.06rem #f9f7e8;
+}
+
+
+/*登录按钮，点击即可进入登录界面*/
+#main #login{
+	margin-left: 0.34rem;
+	height: 0.62rem;
+	width: 5.6rem;
+	background: url(../images/register/register.jpg) repeat-x;
+	outline: none;
+	border: none;
+	border-radius: 0.15rem;
+	-o-border-radius: 0.15rem;
+	-moz-border-radius: 0.15rem;
+	-webkit-border-radius: 0.15rem;
+	text-align: center;
+	color: white;
+	box-shadow: 0 -2px 1px #bbbbbb;
+	-o-box-shadow: 0 -2px 1px #bbbbbb;
+	-webkit-box-shadow: 0 -2px 1px #bbbbbb;
+	-moz-box-shadow: 0 -2px 1px #bbbbbb;
+}

@@ -1,0 +1,357 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+a:link,a:visited{text-decoration: none;}
+a img{border: 0;}
+ul li{list-style: none;}
+input:focus{outline: none;}
+/*兼容性解决 安卓原生浏览器在加了bg后才渲染为block*/
+/* 清理浮动 */
+body,html{
+	font-size: 100px;
+}
+.f-clear:after {visibility:hidden;display:block;
+			font-size:0;
+			content:" ";
+			clear:both;
+			height:0;
+			}
+.f-clear {zoom:1;}/* for IE6 IE7 */
+body{
+	margin: 0;
+	padding: 0;
+	font-family:"微软雅黑";
+	background: #F1F5F8;}
+.wrapper{width: 6.4rem; background: #F1F5F8;  
+	margin:0 auto;}
+.clear{clear: both}
+@keyframes shandong{
+	0%{ opacity:0}
+	20%{ opacity:1}
+	40%{ opacity:0}
+	60%{ opacity:1}
+	100%{ opacity:1}
+	
+	}
+	@-webkit-keyframes shandong{
+	0%{ opacity:0}
+	20%{ opacity:1}
+	40%{ opacity:0}
+	60%{ opacity:1}
+	100%{ opacity:1}
+	
+	}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	font-family: "microsoft yahei";
+}
+img {
+	display: block;
+}
+.wrap {
+	height: 100%;
+	width: 6.4rem;
+	margin: 0 auto;
+	background: #c03430;
+	position: relative;
+	animation:opc 3s ease-in 1s backwards;
+	-webkit-animation:opc 3s ease-in 1s backwards;
+	overflow:hidden
+}
+.yanhua1 {
+	border-radius:50%;
+	position: absolute;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(../images/hua1.png) no-repeat center center;
+	background: -webkit-linear-gradient(rgba(115,197,251,1),rgba(115,197,251,1)), url(../images/hua1.png) no-repeat center center;
+	background-size: 100% 100%,100% 100%;
+	top: 0.5rem;
+	left: 0.45rem;
+	z-index: 1;
+	animation: yanhua 3s ease-out infinite 8s backwards,yanse1 3s ease-out  infinite 8s backwards,touming 3s ease-out infinite 8s backwards;
+	-webkit-animation: yanhua 3s ease-out infinite 8s backwards,yanse1 3s ease-out infinite 8s backwards,touming 3s ease-out infinite 8s backwards;
+	box-shadow:0 0 0.2rem rgba(115,197,251,1);
+}
+.yanhua2 {
+	border-radius:50%;
+	position: absolute;
+	width: 3.3rem;
+	height: 3.3rem;
+	background: linear-gradient(rgba(245,231,210,1),rgba(245,231,210,1)), url(../images/hua2.png) no-repeat center center;
+	background: -webkit-linear-gradient(rgba(245,231,210,1),rgba(245,231,210,1)), url(../images/hua2.png) no-repeat center center;
+	background-size: 100% 100%,100% 100%;
+	top: 2.3rem;
+	left: 2.77rem;
+	z-index: 2;
+	animation: yanhua 3s ease-out infinite 9s backwards,yanse2 3s ease-out infinite backwards 9s,touming 3s ease-out infinite 9s backwards;
+	-webkit-animation: yanhua 3s ease-out infinite 9s backwards,yanse2 3s ease-out infinite backwards 9s,touming 3s ease-out infinite 9s backwards;
+	box-shadow:0 0 0.2rem rgba(245,231,210,1);
+}
+.yanhua3 {
+	border-radius:50%;
+	position: absolute;
+	width: 3.5rem;
+	height: 3.5rem;
+	background: linear-gradient(rgba(154,134,255,1),rgba(154,134,255,1)), url(../images/hua3.png) no-repeat center center;
+	background: -webkit-linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(../images/hua3.png) no-repeat center center;
+	background-size: 100% 100%,100% 100%;
+	top: 3.84rem;
+	left: 0.44rem;
+	z-index: 3;
+	animation: yanhua 3s ease-out infinite 8.5s backwards,yanse3 3s ease-out infinite backwards 8.5s,touming 3s ease-out infinite 8.5s backwards;
+	-webkit-animation: yanhua 3s ease-out infinite 8.5s backwards,yanse3 3s ease-out infinite backwards 8.5s,touming 3s ease-out infinite 8.5s backwards;
+}
+.land {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 6.4rem;
+	z-index: 9
+}
+.land img {
+	width: 100%
+}
+.ren1 {
+	width: 1.84rem;
+	height: 2.35rem;
+	left: 0.48rem;
+	bottom: 1.4rem;
+	position: absolute;
+	z-index: 20;
+	animation:opc 3s linear 4s backwards;
+	-webkit-animation:opc 3s linear 4s backwards;
+}
+.ren1 img {
+	width: 100%;
+	height: 100%
+}
+.ren2 {
+	width: 1.36rem;
+	height: 2rem;
+	left: 2.12rem;
+	bottom: 1.4rem;
+	position: absolute;
+	z-index: 20;
+	animation:opc 3s linear 7.5s backwards;
+	-webkit-animation:opc 3s linear 7.5s backwards;
+}
+.ren2 img {
+	width: 100%;
+	height: 100%
+}
+.ren3 {
+	width: 0.97rem;
+	height: 1.14rem;
+	left: 3.32rem;
+	bottom: 1.4rem;
+	position: absolute;
+	z-index: 20;
+	animation:opc 3s linear 6s backwards;
+	-webkit-animation:opc 3s linear 6s backwards;
+}
+.ren3 img {
+	width: 100%;
+	height: 100%
+}
+.ren4 {
+	width: 1.73rem;
+	height: 2.25rem;
+	left: 4.06rem;
+	bottom: 1.4rem;
+	position: absolute;
+	z-index: 20;animation:opc 3s linear 5s backwards;
+	-webkit-animation:opc 3s linear 5s backwards;
+}
+.ren4 img {
+	width: 100%;
+	height: 100%
+}
+.zhounian {
+	position: absolute;
+	width: 2.12rem;
+	height: 1.99rem;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 2.2rem;
+	z-index: 99;
+	animation:topopc 1.5s linear 12s backwards;
+	-webkit-animation:topopc 1.5s linear 12s backwards;
+}
+.zhounian2 {
+	position: absolute;
+	width: 4.06rem;
+	height: 0.44rem;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom:0.4rem;
+	z-index: 99;
+	animation:opc 1.5s ease-in 9.5s backwards;
+	-webkit-animation:opc 1.5s ease-in 9.5s backwards;
+}
+ @keyframes yanhua {
+ 0% {
+transform:translateY(300%) scale(0.05)
+}
+ 50% {
+transform:translateY(0%) scale(0.05)
+}
+ 100% {
+transform:translateY(0%) scale(1)
+}
+}
+@-webkit-keyframes yanhua {
+ 0% {
+-webkit-transform: translateY(300%) scale(0.05)
+}
+ 50% {
+-webkit-transform:translateY(0%) scale(0.05)
+}
+ 100% {
+-webkit-transform:translateY(0%) scale(1)
+}
+}
+ @keyframes yanse1 {
+ 0% {
+	 background: linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(../images/hua1.png) no-repeat center center;
+	 box-shadow:0 0 0.2rem rgba(115,197,251,1);
+}
+49% {
+ background: linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(../images/hua1.png) no-repeat center center;
+  box-shadow:0 0 0.2rem rgba(115,197,251,1);
+}
+ 50% {
+ background: linear-gradient(rgba(115,197,251,0), rgba(115,197,251,0)), url(../images/hua1.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(115,197,251,0);
+}
+ 100% {
+ background: linear-gradient(rgba(115,197,251,0), rgba(115,197,251,0)), url(../images/hua1.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(115,197,251,0);
+}
+}
+ @-webkit-keyframes yanse1 {
+  0% {
+	 background:-webkit-linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(../images/hua1.png) no-repeat center center;
+	 box-shadow:0 0 0.2rem rgba(115,197,251,1);
+}
+49% {
+ background:-webkit-linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(../images/hua1.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(115,197,251,1);
+}
+ 50% {
+ background:-webkit-linear-gradient(rgba(115,197,251,0), rgba(115,197,251,0)), url(../images/hua1.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(115,197,251,0);
+}
+ 100% {
+ background: -webkit-linear-gradient(rgba(115,197,251,0), rgba(115,197,251,0)), url(../images/hua1.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(115,197,251,0);
+}
+}
+ @keyframes yanse2 {
+ 0% {
+	 background: linear-gradient(rgba(245,231,210,1), rgba(245,231,210,1)), url(../images/hua2.png) no-repeat center center;
+	 box-shadow:0 0 0.2rem rgba(245,231,210,1);
+}
+49% {
+ background: linear-gradient(rgba(245,231,210,1), rgba(245,231,210,1)), url(../images/hua2.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(245,231,210,1);
+}
+ 50% {
+ background: linear-gradient(rgba(245,231,210,0), rgba(245,231,210,0)), url(../images/hua2.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(245,231,210,0);
+}
+ 100% {
+ background: linear-gradient(rgba(245,231,210,0), rgba(245,231,210,0)), url(../images/hua2.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(245,231,210,0);
+}
+}
+ @-webkit-keyframes yanse2 {
+  0% {
+	 background:-webkit-linear-gradient(rgba(245,231,210,1), rgba(245,231,210,1)), url(../images/hua2.png) no-repeat center center;
+	 box-shadow:0 0 0.2rem rgba(115,197,251,1);
+}
+49% {
+ background:-webkit-linear-gradient(rgba(245,231,210,1), rgba(245,231,210,1)), url(../images/hua2.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(245,231,210,1);
+}
+ 50% {
+ background:-webkit-linear-gradient(rgba(245,231,210,0), rgba(245,231,210,0)), url(../images/hua2.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(245,231,210,0);
+}
+ 100% {
+ background: -webkit-linear-gradient(rgba(245,231,210,0), rgba(245,231,210,0)), url(../images/hua2.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(245,231,210,0);
+}
+}
+ @keyframes yanse3 {
+ 0% {
+	 background: linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(../images/hua3.png) no-repeat center center;
+	 box-shadow:0 0 0.2rem rgba(154,134,255,1);
+}
+49% {
+ background: linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(../images/hua3.png) no-repeat center center;
+  box-shadow:0 0 0.2rem rgba(154,134,255,1);
+}
+ 50% {
+ background: linear-gradient(rgba(154,134,255,0), rgba(154,134,255,0)), url(../images/hua3.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(154,134,255,0);
+}
+ 100% {
+ background: linear-gradient(rgba(154,134,255,0), rgba(154,134,255,0)), url(../images/hua3.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(154,134,255,0);
+}
+}
+ @-webkit-keyframes yanse3 {
+  0% {
+	 background:-webkit-linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(../images/hua3.png) no-repeat center center;
+	 box-shadow:0 0 0.2rem rgba(154,134,255,1);
+}
+49% {
+ background:-webkit-linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(../images/hua3.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(154,134,255,1);
+}
+ 50% {
+ background:-webkit-linear-gradient(rgba(154,134,255,0), rgba(154,134,255,0)), url(../images/hua3.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(154,134,255,0);
+}
+ 100% {
+ background: -webkit-linear-gradient(rgba(154,134,255,0), rgba(154,134,255,0)), url(../images/hua3.png) no-repeat center center;
+ box-shadow:0 0 0.2rem rgba(154,134,255,0);
+}
+}
+@keyframes touming{
+	0%{ opacity:1}
+	85%{ opacity:1}
+	100%{ opacity:0}
+	
+	}
+@-webkit-keyframes touming{
+	0%{ opacity:1}
+	85%{ opacity:1}
+	100%{ opacity:0}
+	
+	}
+@keyframes opc{
+	from{ opacity:0}
+	to{ opacity:1}
+	}
+	@-webkit-keyframes opc{
+	from{ opacity:0}
+	to{ opacity:1}
+	}
+@keyframes topopc{
+	from{ opacity:0; transform:translateY(30%)}
+	to{ opacity:1;transform:translateY(0)}
+	}
+	@-webkit-keyframes topopc{
+	from{ opacity:0;-webkit-transform:translateY(30%)}
+	to{ opacity:1;-webkit-transform:translateY(0)}
+	}

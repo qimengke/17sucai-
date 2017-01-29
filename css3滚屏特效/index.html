@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>css3滚屏特效</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(document).ready(function() {
+	$.fn.fullpage({
+		slidesColor: ['#FEDA89', '#DE4F50', '#904A68', '#68C39F'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		navigation: true,
+		css3:true,
+		afterLoad:function(anchorLink, index){	
+			if(index==2){
+				$(".cloud").css("animation-play-state","running");
+				$(".nail").css("animation-play-state","running");
+				}
+			if(index==3){
+				$(".shop").css("animation-play-state","running");
+				$(".fun").css("animation-play-state","running");
+				}
+			if(index==4){
+				$(".gift1").css("animation-play-state","running");
+				$(".gift2").css("animation-play-state","running");
+				$(".ballon").css("animation-play-state","running");
+				$(".phone1").css("animation-play-state","running");
+				}
+			}	
+	});
+});
+</script>
+<!--<script>
+$(function(){
+//;
+var href=window.location.href;
+//alert();
+var last=href.substring(href.length-1);
+
+	});
+</script>-->
+</head>
+<body>
+<div class="section">
+	<div class="box1">
+    	<img src="images/cl.png" style="position:relative; top:300px; z-index:999;"/>
+        <img src="images/ph1.png" style="position:absolute; left:830px; z-index:99; top:250px;" class="ph1" class="ph2" />
+        <img src="images/wheel-1.png" style="position:relative; left:-130px; margin-top:-30px;" class="wheel" />
+        <img src="images/wheel-2.png" style="position:relative; left:100px; top:-100px;" class="wheel" />
+        <img src="images/wheel-3.png" style="position:absolute;  margin-top:220px; margin-left:-30px;" class="wheel"/>
+        <img src="images/wheel-4.png" style="position:absolute; margin-top:280px; margin-left:-30px;" class="wheel"/>
+    </div>
+</div>
+<div class="section">
+	<div class="box2">
+    	<img src="images/cloud.png" class="cloud" style="position:relative; top:-300px; left:180px;"  /> 
+    	<img src="images/map.png" style="position:relative; margin-top:200px; left:-300px;" />
+        <img src="images/nail.png" style="position:absolute; top:350px; left:880px;" class="nail" />
+    </div>
+</div>
+<div class="section">
+	<div class="box3">
+    	<img src="images/fun.png" class="fun" style="margin-top:200px;"/>
+    	<img src="images/shop.png" style=" position:relative;top:60px; z-index:999;" class="shop" />
+    	<img src="images/v-phone.png" style="position:relative; z-index:99; " /> 
+        
+    </div>
+</div>
+<div class="section">
+	<div class="box4">
+    	<img src="images/phone_1.png" style="position:absolute; top:305px; margin-left:-112px;transform:rotate(30deg); transform-origin:bottom right;" class="phone1" />
+        <img src="images/phone_2.png" style="position:absolute; top:405px; margin-left:-100px; z-index:999"/>
+        <img src="images/gift_1.png"  style="position:absolute; top:495px; left:700px; z-index:99" class="gift1"/>
+        <img src="images/gift_2.png"  style="position:absolute;top:550px; z-index:99; left:1100px;" class="gift2"/>
+        <img src="images/ballon.png"  style="position:absolute; z-index:9999; left:800px; top:70px;" class="ballon"/>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>走秀网-注册</title>
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="../css/public/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/public/foot.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+</head>
+<body>
+	<!--头部-->
+	<div id="head">
+		<!--登陆-->
+		<i>登陆</i>
+		<!--注册框-->
+		<input type="text" name="text" id="text" value="注册" />
+	</div>
+	<div id="main">
+				<form class="form-horizontal" role="form">
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label"></label>
+		    <div class="col-sm-10">
+		      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-2 control-label"></label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+		    </div>
+		  </div>
+		   <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label"></label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" id="inputEpassword4" placeholder="Email">
+		    </div>
+		  </div>
+		  
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" class="btn btn-default" id="login">同意服务协议并注册</button>
+		    </div>
+		  </div>
+	</div>
+</form>
+<!--尾部-->
+	<div id="foot">
+		<ul>
+			<li>
+				<i></i>
+				<span>首页</span>
+			</li>
+			<li>
+				<i></i>
+				<span>分类</span>
+			</li>
+			<li>
+				<i></i>
+				<span>购物车</span>
+			</li>
+			<li class="current">
+				<i></i>
+				<span>我的秀</span>
+			</li>
+			<li>
+				<i></i>
+				<span>更多</span>
+			</li>
+		</ul>
+	</div>
+	</body>
+	<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</html>

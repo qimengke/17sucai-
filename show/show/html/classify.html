@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>走秀网-分类</title>
+		<link rel="stylesheet" type="text/css" href="../css/classify.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public/foot.css"/>
+		<script src="../js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src='../js/touch.js'></script>
+		<script>
+	//页面的dom元素准备完毕  $(function(){})
+	//页面的dom元素渲染完毕 (包括src img之间的引用) window.onload
+	//页面dom准备完毕 触发事件
+	window.addEventListener('DOMContentLoaded',init)
+
+	function init(){
+		//1.千万不要下挫版本 5.>
+		//2.如果你发现 IScroll('#lis')> 版本是5.x
+		new iScroll('list',{
+			hScroll :false,
+			onScrollMove:function() {
+			},
+			onScrollEnd:function() {
+				// y 负数 代表向下滚动了多少像素
+				//wrapperH 容器的高度
+				//滚动条向下滚动的距离+容器的高度
+				//如果大于等于子元素相加的高度
+				if(this.wrapperH-this.y>=this.scrollerH) {
+					//ajax加载数据
+					push(this);
+				}
+			}
+		});
+
+		var a = 0;
+		/*下拉加载*/
+		function push(scrollObj) {
+				if(a==3) {
+					//没有更多的数据加载了
+					document.querySelector('#lastDom').innerHTML = '没有数据了^_^';
+					return;
+				}
+			//ajax获取数据
+			document.querySelector('#lastDom').innerHTML = '正在玩命的加载数据...';
+			setTimeout(function(){
+				a++;
+				//滚动到底部  加载新数据
+					for(var i=0;i<5;i++) {
+						var li = document.createElement('li');
+						li.innerText = i;
+						document.querySelector('#demo').insertBefore(li,document.querySelector('#lastDom'));
+					}
+					console.info('123');
+					scrollObj.refresh();
+					document.querySelector('#lastDom').innerHTML = '';
+			},1500)
+		}
+
+	}
+	</script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head">
+			<!--ZXIU-->
+			<span>ZXIU</span>
+			<!--走秀网-->
+			<i>走秀网</i>
+		</div>
+		<!--输入框部分-->
+		<div id="input">
+			<input type="text" name="text" id="text" placeholder="请输入搜索内容" />
+		</div>
+		<!--种类-->
+		<div id="list" class="list">
+			<ul id="demo">
+				<li>
+					<span>全部</span>
+				</li>				
+				<li>
+					<span>衬衫</span>
+				</li>
+				<li>
+					<span>女装T恤</span>
+				</li>
+				<li>
+					<span>珠宝配饰</span>
+				</li>
+				<li>
+					<span>美食保健</span>
+				</li>
+				<li>
+					<span>化妆品</span>
+				</li>
+				<li>
+					<span>品牌专场</span>
+				</li>
+				<li>
+					<span>家居品</span>
+				</li>
+				<li>
+					<span>衬衫</span>
+				</li>
+				<li>
+					<span>女装T恤</span>
+				</li>
+				<li>
+					<span>珠宝配饰</span>
+				</li>
+				<li>
+					<span>美食保健</span>
+				</li>
+				<li>
+					<span>化妆品</span>
+				</li>
+				<li id="lastDom"></li>
+			</ul>
+		</div>
+		<!--尾部-->
+		<div id="foot">
+			<ul>
+				<li>
+					<i></i>
+					<span>首页</span>
+				</li>
+				<li class="current">
+					<i></i>
+					<span>分类</span>
+				</li>
+				<li>
+					<i></i>
+					<span>购物车</span>
+				</li>
+				<li>
+					<i></i>
+					<span>我的秀</span>
+				</li>
+				<li>
+					<i></i>
+					<span>更多</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/classify.js" type="text/javascript" charset="utf-8"></script>
+</html>

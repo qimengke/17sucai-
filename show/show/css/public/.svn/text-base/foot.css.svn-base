@@ -1,0 +1,58 @@
+/*尾部*/
+#foot{
+	position: fixed;
+	bottom: 0;
+	width:100% ;
+	height:0.98rem ;
+	background: #484850;
+}
+#foot ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	display: -o-flex;
+	display: -moz-flex;
+}
+#foot ul li{
+	width: 20%;
+	margin-top: 0.05rem;
+}
+#foot ul li.current{
+	border-top: 0.04rem solid #e5376a;
+	margin-top:0;
+}
+#foot ul li i{
+	width: 100%;
+	display: block;
+	height: 0.54rem;
+	/*justify-content: center;*/
+}
+#foot ul li:nth-child(1) i{
+	background: url(../../images/index/home.jpg) no-repeat 50% center;
+	background-size: 0.51rem auto;
+}
+#foot ul li:nth-child(2) i{
+	background: url(../../images/index/sort.jpg) no-repeat 50% 0.14rem;
+	background-size: 0.46rem auto;
+}
+#foot ul li:nth-child(3) i{
+	background: url(../../images/index/shop_cart.jpg) no-repeat 50% 0.14rem;
+	background-size: 0.5rem auto;
+}
+#foot ul li:nth-child(4) i{
+	background: url(../../images/index/my_show.jpg) no-repeat 50% 0.14rem;
+	background-size: 0.48rem auto;
+}
+#foot ul li:nth-child(5) i{
+	background: url(../../images/index/more.jpg) no-repeat 50% 0.14rem;
+	background-size: 0.48rem auto;
+}
+#foot ul li span{
+	width: 100%;
+	display: block;
+	height: 0.4rem;
+	font:bold 0.24rem/0.4rem '';
+	color: white;
+	text-align: center;
+}

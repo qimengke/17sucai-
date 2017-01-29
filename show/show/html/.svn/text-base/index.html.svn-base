@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>走秀网-首页</title>
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="../css/public/main.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/public/foot.css"/>
+</head>
+<body>
+	<!--头部-->
+	<div id="head">
+		<!--ZXIU-->
+		<span>ZXIU</span>
+		<!--走秀网-->
+		<i>走秀网</i>
+	</div>
+	<!--输入框部分-->
+	<div id="input">
+		<input type="text" name="text" id="text" placeholder="请输入搜索内容" />
+	</div>
+	<!--banner图-->
+	<div id="focus" class="focus">
+            <div class="hd">
+                    <ul></ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="#"><img src="../images/index/banner1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/index/banner2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="../images/index/banner3.jpg" alt=""></a></li>
+                </ul>
+            </div>
+    </div>
+
+	<!--分类-->
+	<div id="sort">
+		<ul>
+			<li>
+				<!--图片-->
+				<div class="img"></div>
+				<!--详细-->
+				<div class="detail">
+					<span>
+						0元大抽奖！走秀携古尔莎为你
+					</span>
+					<i>
+						开启，价值28880元的土耳其特产对方是否
+					</i>
+					<!--钱-->
+					<p>
+						<em class="mon_0">
+							￥0
+						</em>
+						<em class="mon_1">
+							￥28880
+						</em>
+						<em class="mon_2">
+							0折
+						</em>
+						
+					</p>
+					<!--购物车-->
+					<div class="cart"></div>
+				</div>
+			</li>
+			
+			<li>
+				<!--图片-->
+				<div class="img"></div>
+				<!--详细-->
+				<div class="detail">
+					<span>
+						【特价直降】雅思兰黛即时修护
+					</span>
+					<i>
+						特润精华露50ml，一滴抚豆腐节佛挡杀佛十多个 
+					</i>
+					<!--钱-->
+					<p>
+						<em class="mon_0">
+							￥589
+						</em>
+						<em class="mon_1">
+							￥940
+						</em>
+						<em class="mon_2">
+							6.3折
+						</em>
+						
+					</p>
+					<!--购物车-->
+					<div class="cart"></div>
+				</div>
+			</li>
+
+			<li>
+				<!--图片-->
+				<div class="img"></div>
+				<!--详细-->
+				<div class="detail">
+					<span>
+						0元大抽奖！走秀携古尔莎为你
+					</span>
+					<i>
+						开启，价值28880元的土耳其特产对方是否
+					</i>
+					<!--钱-->
+					<p>
+						<em class="mon_0">
+							￥0
+						</em>
+						<em class="mon_1">
+							￥28880
+						</em>
+						<em class="mon_2">
+							0折
+						</em>
+						
+					</p>
+					<!--购物车-->
+					<div class="cart"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--尾部-->
+	<div id="foot">
+		<ul>
+			<li class="current">
+				<i></i>
+				<span>首页</span>
+			</li>
+			<li>
+				<i></i>
+				<span>分类</span>
+			</li>
+			<li>
+				<i></i>
+				<span>购物车</span>
+			</li>
+			<li>
+				<i></i>
+				<span>我的秀</span>
+			</li>
+			<li>
+				<i></i>
+				<span>更多</span>
+			</li>
+		</ul>
+	</div>
+</body>
+<script src="../js/TouchSlide.1.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
